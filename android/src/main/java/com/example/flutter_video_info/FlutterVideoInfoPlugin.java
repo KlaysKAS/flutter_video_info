@@ -60,7 +60,7 @@ public class FlutterVideoInfoPlugin implements FlutterPlugin, MethodCallHandler 
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            
+
 
             author = getData(MediaMetadataRetriever.METADATA_KEY_AUTHOR, mediaRetriever);
             dateString = getData(MediaMetadataRetriever.METADATA_KEY_DATE, mediaRetriever);
@@ -88,11 +88,11 @@ public class FlutterVideoInfoPlugin implements FlutterPlugin, MethodCallHandler 
             orientation = getData(MediaMetadataRetriever.METADATA_KEY_VIDEO_ROTATION, mediaRetriever);
 
             try {
-                 mediaRetriever.release();
+                mediaRetriever.release();
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            
+
         }else{
             author="";
             dateString="";
